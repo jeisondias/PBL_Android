@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PBL Versão 1.0</string>
+    <string name="action_settings">Configurações</string>
+    <string name="disciplina_nome">Nome da Disciplina</string>
+    <string name="save_button">Salvar</string>
+    <string name="nome_turma">Nome Aluno e Disciplina</string>
+    <string name="add_button">Adicionar</string>
+    <string name="Nome_campo">Nome</string>
+    <string name="tab_aluno">Estudante</string>
+    <string name="tab_discipline">Disciplina</string>
+    <string name="tab_class">Turma</string>
+</resources>
