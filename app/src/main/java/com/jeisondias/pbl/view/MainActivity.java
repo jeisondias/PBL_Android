@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         helperM = new MainActivityHelper(this);
         helperM.initialiseTabHost(savedInstanceState);
         if (savedInstanceState != null){
-            mTabHost.setCurrentTabByTag(savedInstanceState.getString("tab"));
+//            mTabHost.setCurrentTabByTag(savedInstanceState.getString("tab"));
         }
         helperM.intialiseViewPager();
     }

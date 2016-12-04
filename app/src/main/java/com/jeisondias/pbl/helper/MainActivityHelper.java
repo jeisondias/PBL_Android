@@ -21,6 +21,7 @@ import com.jeisondias.pbl.model.TabInfo;
 import com.jeisondias.pbl.model.ViewPagerAdapter;
 import com.jeisondias.pbl.tab.TabFragmentAluno;
 import com.jeisondias.pbl.tab.TabFragmentDisciplina;
+import com.jeisondias.pbl.tab.TabFragmentListaDisciplina;
 import com.jeisondias.pbl.tab.TabFragmentTurma;
 import com.jeisondias.pbl.view.DisciplinaActivity;
 import com.jeisondias.pbl.view.MainActivity;
@@ -117,7 +118,8 @@ public class MainActivityHelper implements TabHost.OnCreateContextMenuListener, 
         this.mapTabInfo.put(tabInfo.tag, tabInfo);
         AddTab(mActivity, this.mTabHost,
                 this.mTabHost.newTabSpec("Tab2").setIndicator("Disciplina"),
-                (tabInfo = new TabInfo("Tab2", TabFragmentDisciplina.class, args)));
+                //(tabInfo = new TabInfo("Tab2", TabFragmentDisciplina.class, args)));
+                (tabInfo = new TabInfo("Tab2", TabFragmentListaDisciplina.class, args)));
         this.mapTabInfo.put(tabInfo.tag, tabInfo);
         AddTab(mActivity, this.mTabHost,
                 this.mTabHost.newTabSpec("Tab3").setIndicator("Turma"),
@@ -131,7 +133,8 @@ public class MainActivityHelper implements TabHost.OnCreateContextMenuListener, 
 
         List<Fragment> fragments = new Vector<Fragment>();
         fragments.add(Fragment.instantiate(mActivity, TabFragmentAluno.class.getName()));
-        fragments.add(Fragment.instantiate(mActivity, TabFragmentDisciplina.class.getName()));
+        //fragments.add(Fragment.instantiate(mActivity, TabFragmentDisciplina.class.getName()));
+        fragments.add(Fragment.instantiate(mActivity, TabFragmentListaDisciplina.class.getName()));
         fragments.add(Fragment.instantiate(mActivity, TabFragmentTurma.class.getName()));
         this.mPagerAdapter = new ViewPagerAdapter(mActivity.getSupportFragmentManager(), fragments);
         this.mViewPager = (ViewPager) mActivity.findViewById(R.id.viewpager);
