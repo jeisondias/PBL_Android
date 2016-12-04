@@ -17,7 +17,7 @@ public class Banco  extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(addTabelaDisciplina());
         db.execSQL(addTabelaAluno());
-        db.execSQL(addTabelaDisciplina());
+        db.execSQL(addTabelaTurma());
     }
 
     @Override
